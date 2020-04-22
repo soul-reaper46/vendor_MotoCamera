@@ -15,7 +15,8 @@
 VENDOR_PATH := vendor/MotoCamera
 
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,$(TARGET_COPY_OUT_PRODUCT)/etc) \
+	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc/permissions,$(TARGET_COPY_OUT_PRODUCT)/etc/permissions) \
+	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc/sysconfig,$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig) \
 	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/framework,$(TARGET_COPY_OUT_PRODUCT)/framework) \
    	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/MotCamera/lib/arm,$(TARGET_COPY_OUT_PRODUCT)/priv-app/MotCamera/lib/arm)
 
